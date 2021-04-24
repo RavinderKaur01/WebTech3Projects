@@ -1,0 +1,22 @@
+<html>
+<head><title>Students</title>
+</head>
+<h1 data-position="header">Students Detail</h1>
+		 <section data-position="students">
+		 <h2>Students </h2>
+		 
+		  <ul class="students">     
+			 <% for(var i = 0; i < myst.length; i++) {%> 
+			 <li class="student">		
+			 <span><%= myst[i].student_name %></span> :   
+			 <span><%= myst[i].student_number %></span> &nbsp&nbsp&nbsp   
+			 <span><%= myst[i].student_email %></span> &nbsp&nbsp&nbsp
+			 <span><%= myst[i].student_program %></span> &nbsp&nbsp&nbsp 
+			<span><%= myst[i].StudentDateOfJoin %></span> &nbsp&nbsp&nbsp
+			<span><%= myst[i].student_term %></span> &nbsp&nbsp&nbsp
+			<span><%= myst[i].student_GPA %></span>    			 
+			 </li>     
+			 <% } %>   
+		 </ul>
+	</body>
+</html>
